@@ -1,0 +1,6 @@
+<form action="/articles/<%= @article.id %>" method="post">
+<input id="hidden" type="hidden" name="_method" value="PATCH">
+<input type="text" id="title" name="title" value="<%= @article.title %>">
+<input type="textarea" id="content" name="content" rows="5" cols="33" value="<%= @article.content %>">
+<button type="submit" name="submit" id="submit">Submit</button>
+</form>
